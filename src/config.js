@@ -19,7 +19,7 @@
 export default {
   jwtToken:'',
   insecureRoutes:[
-    //'/api/v1/tests',
+    '/api/v1/tests',
     '/api/v1/authentication/signin',
     '/api/v1/authentication/signup'
     //{ url: '/', methods: ['GET', 'PUT']  } //Example route when routes need to be restricted to the method level.
