@@ -1,0 +1,49 @@
+{
+  "name": "node-api-boilerplate",
+  "version": "0.2.1",
+  "description": "This is a common api for all things chuck conway.",
+  "main": "transpiled/app.js",
+  "engines": {
+    "node": "4.x"
+  },
+  "scripts": {
+    "start": "node transpiled/index.js",
+    "debug": "node-debug transpiled/index.js",
+    "dev": "gulp babel && nodemon transpiled/index.js"
+  },
+  "keywords": [
+    "photos"
+  ],
+  "author": "Chuck Conway",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-syntax-decorators": "^6.5.0",
+    "babel-preset-es2015": "^6.6.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "source-map-support": "^0.3.1"
+  },
+  "dependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-stage-0": "^6.5.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "cors": "^2.7.1",
+    "debug": "^2.2.0",
+    "express": "^4.13.4",
+    "express-auto-routes": "https://github.com/chuckconway/express-auto-routes.git#v0.2.1",
+    "express-jwt": "^3.3.0",
+    "express-unless": "^0.3.0",
+    "glob": "^7.0.3",
+    "lodash": "^4.6.1",
+    "mongoose": "^4.4.8",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.9.2",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "showdown": "^1.3.0"
+  }
+}
