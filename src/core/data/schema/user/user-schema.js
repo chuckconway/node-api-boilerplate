@@ -50,6 +50,6 @@ export default class UserSchema {
 
 		    callback(null, isMatch);
 		  });
-		}
+		};
 	}
 }

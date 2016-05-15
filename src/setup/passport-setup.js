@@ -1,36 +1,5 @@
-// import passport from 'passport';
-// import {UserModel} from '../core/models/UserModel';
-// import {Local} from './passport/Local';
-//
-// export class Passport{
-//     configure(){
-//         this.setUserSerialization();
-//         this.loadStrategies();
-//     }
-//
-//     setUserSerialization(){
-//         let model = new UserModel();
-//         let User = model.model();
-//
-//         passport.serializeUser((user, done) => {
-//             done(null, user.id)
-//         })
-//
-//         passport.deserializeUser((id, done) => {
-//             User.load({ criteria: { _id: id } }, (err, user) =>{
-//                 done(err, user)
-//             })
-//         })
-//     }
-//
-//     loadStrategies(){
-//         let local = new Local();
-//         passport.use(local.initialize());
-//     }
-// }
-
 import passport from 'passport';
-import {User} from '../core/data/schema/Schema';
+import {User} from '../core/data/schema/schema';
 import config from '../config';
 import {Strategy as JwtStrategy, ExtractJwt} from 'passport-jwt';
 import LocalStrategy from 'passport-local';
@@ -71,7 +40,7 @@ const jwtLogin = new JwtStrategy(jwtOptions, function(payload, done){
       done(null, false);
     }
 
-  })
+  });
 });
 
 passport.use(jwtLogin);

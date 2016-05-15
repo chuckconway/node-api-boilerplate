@@ -10,7 +10,7 @@ if(port === undefined) {
   port = 3000;
 }
 
-var app = require('./app');
+var app = require('./app').default;
 var debug = require('debug')('app:server');
 var http = require('http');
 

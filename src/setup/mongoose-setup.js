@@ -1,4 +1,4 @@
-import UserSchema from '../core/data/schema/user/UserSchema';
+import UserSchema from '../core/data/schema/user/user-schema';
 import mongoose from 'mongoose';
 import config from '../config';
 

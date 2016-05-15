@@ -32,4 +32,4 @@ export default {
     scanGlob:'/api/**/*.js'
   },
   mongoConnectionString: ''
-}
+};

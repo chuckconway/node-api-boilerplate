@@ -10,12 +10,12 @@ import {routeAuth} from '../core/security/route-auth-middleware';
 
 import Config from '../config';
 
-export class Express{
+export class Express {
     constructor(dirname){
         this.dirname = dirname;
     }
 
-    configure(startup){
+    configure(startup) {
 
         //Setup Express
         let app = express();

@@ -1,6 +1,6 @@
 import {httpPost} from 'express-auto-routes';
-import {tokenForUser} from './auth-utility';
-import {User} from '../../core/data/schema/Schema';
+import {tokenForUser} from '../../core/security/auth-utility';
+import {User} from '../../core/data/schema/schema';
 
 import passport from 'passport';
 
